@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CSS</title>
+</head>
+
+<body>
+    <h1 class="texto">Minha primiera aula de CSS</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Cum fuga, delectus quod corrupti itaque quo asperiores officiis consectetur mollitia tempora,
+        doloremque quas reiciendis, consequatur iusto voluptatem voluptate! In, placeat voluptatum?</p>
+    <button class="botao">Clica em mim, por favor</button>
+    <button id="segundo-botao">Clica em mim, vai logo</button>
+
+</body>
+
+
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>css/title>
+</head>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>CSS</title>
+</head>
+
+<body>
+    <h1>Texto no CSS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus consequuntur ipsam fuga vel soluta sunt blanditiis quidem exercitationem obcaecati tempore
+        numquam rerum,
+        accusantium quam architecto quos, repellendus perferendis officia mollitia.</p>
+</body>
+
+</html>
+
+h1 {
+    color: red;
+    /*troca a cor do texto*/
+    font-size: 100px;/*
+    /*Troca o tamanho do texto*/
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    text-shadow: 10px 10px 40px red;
+}
+
+p {
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    line-height: 50px;
+    letter-spacing: 10px;
+    word-spacing: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+/*Eu posso acrescentar (,) entra as calsses para que tudo seja estilizado obs: Isso serve para ganhar tempo*/
+
+/*.texto, .botao, p, #segundo-botao {
+color: red;
+
+}
+
+h1 {
+    color: red;
+    background: black;
+}
+
+p {
+    color:blue;
+    font-size: 20px;
+}
+
+/*(*) O asteristico significa tudo na pagina*/
+
+/** {
+    background: red;
+}
+
+/*Os seletores de ID e usado para identificar especifica 
+tag no html lembrando que o ID e unicoco e utiliza o (#)*/
+
+/*#texto {
+    color: blue;
+    font-style: 20px;
+}
+
+/*a classe ou class pode se repetir pode ser usada para varias tag e sempre começa com (.)*/
+
+/*.texto {
+
+    color: red;
+}
+
+.botao {
+   color: brown;
+}
+
+CSS 
+significa folha de estilo em cascata sempre começa a aplicar as configurações de cima para baixo
+*/
+
+/*Aula sobre cores vamos 
+aprender sobre formas de representar cores */
+
+/* RED= vermelho
+   GREEN= Verde
+   Blue= Azul 
+   apartir desas cores podemos criar qualquer cor
+
+   HEXADESIMAL = SEGUINOFICA 9 NUMEROS 6 NUMEROS 
+   */
+/*
+h1 {
+    background: rgb(255, 100, 50);
+}
+
+h1 {
+    background: #124ff1;
+}*/
+/*AUla sobre margens*/
+.box {
+    width: 50px;
+    height: 50px;
+    background: #ff1493;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 10px;
+
+    margin: 10px 50px 30px 5px;
+   /*Atalho do relogio posso coloar
+    a margn todas em uma so linha
+     como no exemplo acima*/
+    
+}
+
+/*Aula sobre BOX SIZING*/
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: #ff1493;
+    padding: 20px;
+    border: 10px solid #0000FF;
+
+}
+
+/*aula sobre display
+
+VALORES DE DISPLAY
+  -BLOK
+  -INLINE
+  -INLINE-BLOK
+  -GRID
+  -FLEX
+
+  -BLOK
+  Vem como padrão: div, section, p, h1, h2, ul, li, article...
+
+  - Ocupa 100% da largura do elemento pai 
+  - Sempre ocupa toda a sua linha
+  - Altura definido de acordo com o conteudo 
+  -podemos definir o height e width
+  - podemos definir valores de margin
+
+  -INLINE   
+  - Vem com padrão a, span, b, i.....
+  -Elementos em linha 
+  -Não permite auterar o height e o width
+  - Não podemos definir valores de margin
+  -Ganha comportamento de uma palavra
+
+  -INLINE-INBLOK
+  -Elementos em linha, porem com caracteristicas do dispaly blok
+  -A autura e largura posem ser auteradas 
+*/
+.box {
+background: #FF1395;
+height: 50px;
+width: 50px;
+display: inline-block
+}
+
+.box-2 {
+background: #FFFF00;
+
+}
+
+.box-3 {
+background: #0003FF;
+
+}

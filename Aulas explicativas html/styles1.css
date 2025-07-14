@@ -1,0 +1,90 @@
+/*
+Pseudo classes 
+-> Activa- quando esta ativo, ou seja, esta sendo presionado
+-> visited- seleciona o link que já foi visitado
+-> hover- quando o mouse passa por cima do elemento
+-> checkad- usado em radio / checkbox / select
+-> disabled- elementos desabilitado / button / input / select / textarea
+-> enabled- elemento esta habilitado 
+-> focus - quando o elemento esta em foco, ou seja, quando o elemento recebe o cursor do mouse ou o teclado
+-> read-only- seleciona o input ou textarea que é somente leitura, ou seja, não pode ser editado pelo usuário
+-> emply- elemento que não tem filhos, ou seja, não tem nenhum elemento dentro dele
+-> frist-child - seleciona o primeiro filho de um elemento lista de um ul / primeiro span de uma dicv 
+-> frist-of-type - seleciona o primeiro filho de um elemento do mesmo tipo, ou seja, o primeiro span de uma div, o primeiro li de uma ul
+-> last-child - seleciona o último filho de um elemento lista de um ul / ultimo span de uma dicv
+-> last-of-type- seleciona o último filho de um elemento do mesmo tipo, ou seja, o último span de uma div, o último li de uma ul
+-> not- estiliza os lelmentos, exerto os que estão dentro do seletor ()
+-> nth-shild- seleciona o elmento baseado na sua posição, ex: :nth-last-child:(3) 
+-> :nth-last-child- seleciona o elmento baseado na sua posição, contando de trás para frente
+*/
+
+a {
+    color: blue;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color 0.20s;
+}
+/*
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+input:checked {
+    width: 50px;
+    height: 50px;
+}
+
+a:disabled {
+    color: gray;
+    cursor: not-allowed;
+}
+
+input:disabled {
+    width: 100px;
+    height: 100px;
+}
+
+input:focus {
+    border: solid 2px rgb(121, 30, 30);
+    outline: none;
+}
+
+input:read-only {
+    background-color: red;
+    outline: none;
+}
+
+.container:hover {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+li:first-child {
+    color: red;
+}
+
+span:first-of-type {
+    color: blue;
+}
+P:first-of-type {
+    color: green;
+}
+*/
+
+/*
+li:nth-child(2) {
+    color: yellow;
+}
+*/
+
+

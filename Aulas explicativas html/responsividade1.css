@@ -1,0 +1,62 @@
+/*RESPONSIVIDADE
+-> all- aplica a todos os dispositivos
+-> braile- aplica a dispositivos de leitura em braile ou táteis 
+-> screen- aplica a dispositivos com tela, como computadores, tablets e smartphones, talas coloridas e resolução adequada
+-> print- aplica a dispositivos de impressão, como impressoras, para otimizar a visualização e impressão de documentos
+-> speech- aplica a dispositivos de fala, como leitores de tela, para otimizar a leitura em voz alta do conteúdo
+-> handheld- aplica a dispositivos móveis, como celulares e tablets, para otimizar a visualização em telas pequenas
+-> tv- aplica a dispositivos de TV, como Smart TVs, para otimizar a visualização em telas grandes
+-> projection- aplica a dispositivos de projeção, como projetores, para otimizar a visualização em telas grandes
+ORIENTAÇÃO 
+-> portrait- aplica a dispositivos com orientação vertical, como smartphones e tablets em modo retrato
+-> landscape- aplica a dispositivos com orientação horizontal, como smartphones e tablets em modo paisagem
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #4508ec;
+}
+
+
+
+div {
+    width: 700px;
+    height: 700px;
+    background-color: #4508ec;    
+}
+/*
+@media (max-width: 600px) {
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: #ec0808;
+    }
+}*/
+
+/*aplicação exemplo: @midia scree ou print ou speech etc.....
+operadores logicos ( and, or , not)
+*/
+@media screen and (max-width: 600px) {
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: #ec0808;
+    }
+}
+
+/*
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    div {
+        width: 200px;
+        height: 200px;
+        background: #ec0808;
+    }
+}/*
+
