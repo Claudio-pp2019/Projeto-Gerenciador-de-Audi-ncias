@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Audiências at</title>
+    <link rel="stylesheet" href="styles-auduencia.css">
+</head>
+
+    <script src="./script.js"></script>
+
+
+<body>
+    <header>
+        <h1>Gerenciamento de Audiências</h1>
+    </header>
+    <main>
+        <section class="audiencias">
+            <h2>Audiências</h2>
+            <form id="form-audiencia">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+                <label for="vara">Vara:</label>
+                <input type="text" id="vara" name="vara">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao"></textarea>
+                <button type="submit">Cadastrar Audiência</button>
+            </form>
+            <div id="lista-audiencias"></div>
+        </section>
+        <section class="lembretes">
+            <h2>Lembretes</h2>
+            <form id="form-lembrete">
+                <label for="data-lembrete">Data:</label>
+                <input type="date" id="data-lembrete" name="data-lembrete">
+                <label for="hora-lembrete">Hora:</label>
+                <input type="time" id="hora-lembrete" name="hora-lembrete">
+                <label for="descricao-lembrete">Descrição:</label>
+                <textarea id="descricao-lembrete" name="descricao-lembrete"></textarea>
+                <button type="submit">Cadastrar Lembrete</button>
+            </form>
+            <div id="lista-lembretes"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
