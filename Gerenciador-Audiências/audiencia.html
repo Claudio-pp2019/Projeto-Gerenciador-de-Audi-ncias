@@ -2,49 +2,85 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciamento de Audiências/title>
-    <link rel="stylesheet" href="./styles-audiencia.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerenciamento de Audiências</title>
+    <link rel="stylesheet" href="./styles-audiencia.css" />
 </head>
-
-    <script src="./script.js"></script>
-
 
 <body>
     <header>
         <h1>Gerenciamento de Audiências</h1>
     </header>
+
     <main>
         <section class="audiencias">
             <h2>Audiências</h2>
             <form id="form-audiencia">
-                <label for="data">Data:</label>
-                <input type="date" id="data" name="data">
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora" name="hora">
+                <label for="cliente-nome">Nome do Cliente:</label>
+                <input type="text" id="cliente-nome" name="cliente-nome" required />
+
+                <label for="cliente-whatsapp">WhatsApp do Cliente:</label>
+                <input type="tel" id="cliente-whatsapp" name="cliente-whatsapp" placeholder="(99) 99999-9999"
+                    required />
+
+                <label for="cliente-email">Email do Cliente:</label>
+                <input type="email" id="cliente-email" name="cliente-email" required />
+
+                <label for="data">Data da Audiência:</label>
+                <input type="date" id="data" name="data" required />
+
+                <label for="hora">Hora da Audiência:</label>
+                <input type="time" id="hora" name="hora" required />
+
+                <label for="prazo">Prazo (para alerta):</label>
+                <input type="date" id="prazo" name="prazo" required />
+
                 <label for="vara">Vara:</label>
-                <input type="text" id="vara" name="vara">
+                <input type="text" id="vara" name="vara" required />
+
                 <label for="descricao">Descrição:</label>
-                <textarea id="descricao" name="descricao"></textarea>
+                <textarea id="descricao" name="descricao" required></textarea>
+
                 <button type="submit">Cadastrar Audiência</button>
             </form>
             <div id="lista-audiencias"></div>
         </section>
+
         <section class="lembretes">
-            <h2>Lembretes</h2>
+            <h2>Lembretes / Tarefas</h2>
             <form id="form-lembrete">
-                <label for="data-lembrete">Data:</label>
-                <input type="date" id="data-lembrete" name="data-lembrete">
-                <label for="hora-lembrete">Hora:</label>
-                <input type="time" id="hora-lembrete" name="hora-lembrete">
+                <label for="titulo-lembrete">Título da Tarefa:</label>
+                <input type="text" id="titulo-lembrete" name="titulo-lembrete" required />
+
+                <label for="cliente-lembrete-nome">Nome do Cliente:</label>
+                <input type="text" id="cliente-lembrete-nome" name="cliente-lembrete-nome" required />
+
+                <label for="cliente-lembrete-whatsapp">WhatsApp do Cliente:</label>
+                <input type="tel" id="cliente-lembrete-whatsapp" name="cliente-lembrete-whatsapp"
+                    placeholder="(99) 99999-9999" required />
+
+                <label for="cliente-lembrete-email">Email do Cliente:</label>
+                <input type="email" id="cliente-lembrete-email" name="cliente-lembrete-email" required />
+
+                <label for="data-lembrete">Data da Tarefa:</label>
+                <input type="date" id="data-lembrete" name="data-lembrete" required />
+
+                <label for="hora-lembrete">Hora da Tarefa:</label>
+                <input type="time" id="hora-lembrete" name="hora-lembrete" required />
+
+                <label for="prazo-lembrete">Prazo (para alerta):</label>
+                <input type="date" id="prazo-lembrete" name="prazo-lembrete" required />
+
                 <label for="descricao-lembrete">Descrição:</label>
-                <textarea id="descricao-lembrete" name="descricao-lembrete"></textarea>
-                <button type="submit">Cadastro de Lembretes</button>
+                <textarea id="descricao-lembrete" name="descricao-lembrete" required></textarea>
+
+                <button type="submit">Cadastrar Tarefa</button>
             </form>
             <div id="lista-lembretes"></div>
         </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 
