@@ -1,0 +1,7 @@
+{
+  "name": "Jurisexito.pro",
+  "description": "Sistema de elite para gerenciamento de pautas jurídicas com sincronização em tempo real entre dispositivos.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
